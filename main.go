@@ -19,13 +19,37 @@ func main() {
 	vehicle = entity.Car{Wheels: 4}
 	fmt.Println(vehicle)*/
 
-	var shape entity.Shape
+	/*var shape entity.Shape
 	shape = entity.Circle{Radius: 2.4}
 	circle, ok := shape.(entity.Rectangle)
 	if !ok {
 		fmt.Println("Its not a rectangle")
 	}
-	fmt.Println(circle.Area())
+	fmt.Println(circle.Area())*/
+
+	/*names := make(map[string]int)
+	names = map[string]int{
+		"tom": 1,
+	}
+
+	value, _ := names["tom"]
+	fmt.Println(value, len(names))
+
+	for key, v := range names { //key in loc de index(ca la array)
+		fmt.Println(key, v)
+	}*/
+
+	/*var n *int
+	var m = new(int)
+	fmt.Println(n, m)*/
+
+	/*switch vehicle.(type) {
+	case entity.Car:
+		fmt.Println("This is a car")
+	default:
+		fmt.Println("default")
+	}*/
+	
 }
 
 func Test(a *int) {
@@ -33,6 +57,6 @@ func Test(a *int) {
 }
 
 func GetCircumference(shape entity.Shape) {
-	circle, ok := shape.(entity.Circle)
+	circle, _ := shape.(entity.Circle) //ok in loc de _
 	fmt.Println(circle.Circumference())
 }
