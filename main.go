@@ -5,6 +5,11 @@ import (
 	"internship/golang2/entity"
 )
 
+const (
+	Pi       = 3.14
+	Timezone = "CET"
+)
+
 func main() {
 	/*var a = 10
 	var b *int
@@ -49,7 +54,7 @@ func main() {
 	default:
 		fmt.Println("default")
 	}*/
-	
+
 }
 
 func Test(a *int) {
